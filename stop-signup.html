@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up</title>
+  <script src="https://kit.fontawesome.com/34915f22d1.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+    *
+    {
+      margin:0px;
+       padding:0px;
+        box-sizing:border-box;
+    }
+    .header-section
+    {
+      background-color:#f2f2f2;
+       max-width:100%;
+        height:100vh;
+         display:flex;
+          position:relative;
+           font-family:sans-serif;
+    }
+    .left-container
+    {
+       width:35%;
+        height:100vh;
+         position:relative;
+          background-color:#20b2aa;
+           top:5%;
+            border-right:10px solid #f2f2f2;
+    }
+    .left-container .content-container-1
+    {
+       text-align:center;
+        margin-top:50%;
+       
+    }
+    .left-container .content-container-1 h1
+    {
+      font-size:3em;
+    }
+    .left-container .content-container-1 h1,p,button
+    {
+      margin:20px;
+    }
+    .left-container .content-container-1 button
+    {
+      padding:8px 70px;
+       background:transparent;
+        border-radius:20px;
+         border:1px solid #f2f2f2;
+          color:#f2f2f2;
+           font-weight:600;
+    }
+    .right-container
+    {
+       width:65%;
+        height:100vh;
+         background-color:#f2f2f2;
+          position:relative;
+           top:5%;
+    }
+    .right-container .content-container-2
+    {
+       padding:20px;
+        text-align:center;
+         margin-top:12%;
+    }
+    .right-container .content-container-2 h1,.link-container,p,button
+    {
+      margin:17px;
+    }
+   .right-container .content-container-2 .link-container ul
+   {
+    list-style-type:none;
+   }
+   .right-container .content-container-2 .link-container ul li
+   {
+     display:inline-block;
+      margin:10px;
+   }
+   .right-container .content-container-2 .link-container ul li i:hover
+   {
+    transform:scale(1.2);
+     transition:all 0.2s;
+      cursor:pointer;
+   }
+    .right-container .content-container-2 input
+    {
+      margin:5px;
+       width:40%;
+        height:35px;
+         padding:10px;
+          background-color:#d8e4bc;
+           border:1px solid #d8e4bc;
+    }
+    .right-container .content-container-2 h1
+    {
+      font-size:3em;
+    }
+    .right-container .content-container-2 button
+    {
+      margin-top:40px;
+       padding:12px 90px;
+        border-radius:20px;
+         border:1px solid #20b2aa;
+          background-color:#20b2aa;
+           color:#f2f2f2;
+            font-weight:600;
+             cursor:pointer;
+    }
+    .right-container .content-container-2 button:focus
+    {
+      background-color:#f2f2f2;
+       border:1px solid #0a0a0a;
+        color:#0a0a0a;
+    }
+    .navbar
+    {
+      width:100%;
+       height:70px;
+        background-color:royalblue;
+         display:flex;
+          justify-content:space-around;
+           align-items:center;
+            font-family:sans-serif;
+             position:fixed;
+              z-index:99;
+               background-color:rgba(0, 0, 0, 1.0);
+    }
+    .navbar h1
+    {
+      color:#f2f2f2;
+    }
+    .navbar nav a
+    {
+      margin:20px;
+       color:#f2f2f2;
+        text-decoration:none;
+         font-weight:600;
+    }
+    .navbar nav a:hover
+    {
+      color:orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1><img src="stop.png" width="100px"></h1>
+    <nav>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+      <a href="#">Blogs</a>
+      <a href="#">Contact</a>
+      <a href="#">Login/Register</a>
+    </nav>
+  </div>
+<section class="header-section">
+  <div class="left-container">
+    <div class="content-container-1">
+    <h1>Welcome Friend</h1>
+    <p>To keep connected with us please<br>login with your personal info.</p>
+    <button>Sign in</button>
+  </div>
+  </div>
+  <div class="right-container">
+    <div class="content-container-2">
+    <h1>Create Account</h1>
+    <div class="link-container">
+     <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+    <p>or use your email for registration</p><br>
+    <i class="fa-solid fa-user"></i>
+    <input type="text" name="name" placeholder="Name"><br>
+    <i class="fa-solid fa-envelope"></i>
+    <input type="text" name="mail" placeholder="Email"><br>
+    <i class="fa-solid fa-unlock-keyhole"></i>
+    <input type="password" name="password" placeholder="Password"><br>
+    <button>Sign Up</button>
+  </div>
+  </div>
+</section>
+</body>
+</html>
